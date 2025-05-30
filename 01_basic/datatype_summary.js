@@ -37,3 +37,31 @@ console.table([[score,typeof(score)],[isLoggedIn,typeof(isLoggedIn)],[userEmail,
 [heros,typeof(heros)],[myObj,typeof(myObj)],[myFunction,typeof(myFunction)],])
 
 //dynamically typed language :-data type mentioning not nessary
+
+
+//+++++++++++++++++++++++++++++++++MEMORY++++++++++++++++++++++++++++++++++++++++++++++++
+
+// STACK <- (primitive dt values jate hai)                         HEAP <- (non primitive dt jate hai )
+// copy militi hai                                               //  reference milta hai
+
+let myYoutubename= "abccom"
+
+let anotherName=myYoutubename
+anotherName="chaiaurcode"
+
+
+console.log(anotherName);
+console.log(myYoutubename);
+
+
+let userOne ={
+  email: "abc@gmail.com",
+  upi: "user412"
+}
+
+let userTwo=userOne  //reference
+
+userTwo.email="123@gmail.com"
+
+console.log(userOne.email)
+console.log(userTwo.email)
